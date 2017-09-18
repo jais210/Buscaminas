@@ -1,0 +1,2 @@
+# Buscaminas
+Paradigmas de programación
