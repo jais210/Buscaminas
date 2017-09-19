@@ -40,9 +40,9 @@ function appearNumber(e) {
         } else {
             divObj.style.backgroundImage = "url(assets/img/bomba.jpg)";
             openCamp(bomb);
-            alert("Boomm Perdiste");
+            alert("Esto ha explotado");
             var buttonReinicia = document.getElementById(btnReinicia);
-            buttonReinicia.addEventListener('click', doGame(), false);
+            buttonReinicia.addEventListener('click', doGame(), false); // doGame 
 
 
         }
@@ -78,7 +78,6 @@ function bombAround(campo) {
         }
     }
 }
-
 
 function putNumberBomb(vari, varj, fini, finj, campo) {
     for (var i = vari; i <= fini; i++) {
