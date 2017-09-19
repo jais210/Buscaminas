@@ -41,6 +41,7 @@ function appearNumber(e) {
             divObj.style.backgroundImage = "url(assets/img/bomba.jpg)";
             openCamp(bomb);
             alert("Esto ha explotado");
+
             var buttonReinicia = document.getElementById(btnReinicia);
             buttonReinicia.addEventListener('click', doGame(), false); // doGame 
 
