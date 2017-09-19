@@ -1,7 +1,17 @@
-.minas {
-    width: 416px;
-    height: 416px;
-    border: 1px solid black;
-    margin-left: 33%;
-    margin-top: 120px;
-}
+    .campo {
+        width: 416px;
+        height: 416px;
+        border: 1px solid salmon;
+        margin-left: 33%;
+        margin-top: 120px;
+    }
+    
+    .campo div {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #DF2B94;
+        float: left;
+        background-color: #E0BF05;
+        font-size: 30;
+        text-align: center;
+    }
