@@ -1,10 +1,10 @@
+var bomb = initMatriz();
+
 function doGame() {
     doCamp();
     doBomb(bomb);
     bombAround(bomb);
 }
-
-var bomb = initMatriz();
 
 function initMatriz() {
     var camp = [];
@@ -23,6 +23,23 @@ function doCamp() {
             campoMinas.appendChild(div);
         }
     }
+}
+
+function doBomb(campo) {
+    var fil = 0;
+    var col = 0;
+
+    fil = Math.floor((Math.random() * 7) + 0);
+    col = Math.floor((Math.random() * 7) + 0);
+
+    for (var i = 0; i < 8; i++) {
+        while (campo[fil][col] == "*") {
+            fil = Math.floor((Math.random() * 7) + 0);
+            col = Math.floor((Math.random() * 7) + 0);
+        }
+        campo[fil][col] = "*";
+    }
+
 }
 
 function appearNumber(e) {
@@ -90,22 +107,7 @@ function putNumberBomb(vari, varj, fini, finj, campo) {
     }
 }
 
-function doBomb(campo) {
-    var fil = 0;
-    var col = 0;
 
-    fil = Math.floor((Math.random() * 7) + 0);
-    col = Math.floor((Math.random() * 7) + 0);
-
-    for (var i = 0; i < 8; i++) {
-        while (campo[fil][col] == "*") {
-            fil = Math.floor((Math.random() * 7) + 0);
-            col = Math.floor((Math.random() * 7) + 0);
-        }
-        campo[fil][col] = "*";
-    }
-
-}
 
 function openMount(vari, varj, fini, finj, cori, corj, campo) {
     for (var i = vari; i <= fini; i++) {
