@@ -6,6 +6,7 @@ function doGame() {
     bombAround(bomb);
 }
 
+<<<<<<< HEAD
 function initMatriz() {
     var camp = [];
     for (var i = 0; i < 8; i++) {
@@ -13,6 +14,9 @@ function initMatriz() {
     }
     return camp;
 }
+=======
+
+>>>>>>> cdf5aa9d7697da428c188af6ad9f612122b17e50
 
 function doCamp() {
     for (var i = 0; i < 8; i++) {
