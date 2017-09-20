@@ -134,28 +134,7 @@ function openMount(vari, varj, fini, finj, cori, corj, campo) {
     }
 }
 
-function openAround(xi, xj, campo) {
-    if (xi == 0 && xj == 0) {
-        openMount(xi, xj, xi + 1, xj + 1, xi, xj, campo);
-    } else if (xi == 0 && (xj > 0 && xj < 7)) {
-        openMount(xi, xj - 1, xi + 1, xj + 1, xi, xj, campo);
-    } else if (xi == 0 && xj == 7) {
-        openMount(xi, xj - 1, xi + 1, xj, xi, xj, campo);
-    } else if (xj == 7 && (xi > 0 && xi < 7)) {
-        openMount(xi - 1, xj - 1, xi + 1, xj, xi, xj, campo);
-    } else if (xi == 7 && xj == 7) {
-        openMount(xi - 1, xj - 1, xi, xj, xi, xj, campo);
-    } else if (xi == 7 && (xj > 0 && xj < 7)) {
-        openMount(xi - 1, xj - 1, xi, xj + 1, xi, xj, campo);
-    } else if (xi == 7 && xj == 0) {
-        openMount(xi - 1, xj, xi, xj + 1, xi, xj, campo);
-    } else if (xj == 0 && (xi > 0 && xi < 7)) {
-        openMount(xi - 1, xj, xi + 1, xj + 1, xi, xj, campo);
-    } else {
-        openMount(xi - 1, xj - 1, xi + 1, xj + 1, xi, xj, campo);
-    }
-}
-
+// 
 function openCamp(campo) {
     for (var i = 0; i < 8; i++) {
         for (var j = 0; j < 8; j++) {
