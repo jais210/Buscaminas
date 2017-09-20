@@ -4,8 +4,6 @@ function doGame() {
     bombAround(bomb);
 }
 
-var bomb = initMatriz();
-
 function initMatriz() {
     var camp = [];
     for (var i = 0; i < 8; i++) {
@@ -13,6 +11,9 @@ function initMatriz() {
     }
     return camp;
 }
+
+var bomb = initMatriz();
+
 
 function doCamp() {
     for (var i = 0; i < 8; i++) {
